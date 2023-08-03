@@ -1,17 +1,17 @@
-var arrayRankTransform = function(arr) {
-  const newArray = arr.slice(0).sort();
-  const solutionsArray = [];
-  const numToRank = {};
-  for(let i = 0; i < newArray.length; i++){
-      if(newArray[i] in numToRank){
-          continue
-      }
-      numToRank[newArray[i]] = i + 1;
+class LinkedList {
+  constructor(head = null) {
+    this.head = head;
   }
-  console.log(numToRank)
-  for(let i = 0; i < arr.length; i++){
-      solutionsArray.push(numToRank[arr[i]])
-      // console.log(numToRank[arr[i]], arr[i])
+}
+
+class Node {
+  constructor(item, next) {
+    this.value = item;
+    this.next = next;
   }
-  return solutionsArray
-};
+}
+
+const newNode = new Node(1);
+const newNode1 = new Node(2, newNode);
+const newLL = new LinkedList(newNode1);
+console.log(newLL);
