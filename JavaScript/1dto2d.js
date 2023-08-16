@@ -1,4 +1,4 @@
-const original = [1, 2, 3, 4, 5, 6];
+const originalArray = [1, 2, 3, 4, 5, 6];
 const m = 2;
 const n = 3;
 
@@ -32,4 +32,4 @@ const construct2DArray = function (original, m, n) {
   return newArray;
 };
 
-console.log(construct2DArray(original, m, n));
+console.log(construct2DArray(originalArray, m, n));
